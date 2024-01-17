@@ -44,4 +44,25 @@ public class CarRadio implements IRadio {
             fmPresets[index] = station;
         }
     }
+
+    /**
+     * Indica si el radio está actualmente en modo AM.
+     * true si el radio está en modo AM, false si está en modo FM.
+     */
+
+     @Override
+     public boolean isAm() {
+         return isAm;
+    }
+
+    /**
+      * Indica si el radio está encendido o apagado.
+      * true si el radio está encendido, false si está apagado.
+      */
+ 
+     @Override
+     public boolean isOn() {
+         return isOn;
+    }
+ 
 }
